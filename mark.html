@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Markdown and HTML Example</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/marked"></script>
+</head>
+<body>
+  <div id="markdown-content">
+    <!-- เนื้อหา Markdown จะถูกแสดงผลที่นี่ -->
+    # สวัสดี Markdown!
+  </div>
+
+  <div id="html-content">
+    <!-- เนื้อหา HTML จากการแปลง Markdown เป็น HTML จะถูกแสดงผลที่นี่ -->
+  </div>
+
+  <script>
+    // แปลง Markdown เป็น HTML
+    const markdownContent = document.getElementById('markdown-content').textContent;
+    const htmlContent = marked(markdownContent);
+
+    // แสดง HTML ที่แปลงได้ในตำแหน่งที่กำหนด
+    const htmlContainer = document.getElementById('html-content');
+    htmlContainer.innerHTML = htmlContent;
+  </script>
+</body>
+</html>

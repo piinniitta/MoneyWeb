@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Button Click Transition</title>
+  <style>
+    .page {
+      display: none;
+    }
+    .active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="page active" id="page1">
+    <h1>หน้าที่ 1</h1>
+    <button onclick="changePage('page2')">ต่อไป</button>
+  </div>
+
+  <div class="page" id="page2">
+    <h1>หน้าที่ 2</h1>
+    <button onclick="changePage('page1')">ย้อนกลับ</button>
+    <button onclick="changePage('page3')">ต่อไป</button>
+  </div>
+
+  <div class="page" id="page3">
+    <h1>หน้าที่ 3</h1>
+    <button onclick="changePage('page2')">ย้อนกลับ</button>
+    <button onclick="changePage('page4')">ต่อไป</button>
+  </div>
+
+  <div class="page" id="page4">
+    <h1>หน้าที่ 4</h1>
+    <button onclick="changePage('page3')">ย้อนกลับ</button>
+    <button onclick="changePage('page5')">ต่อไป</button>
+  </div>
+
+  <div class="page" id="page5">
+    <h1>หน้าที่ 5</h1>
+    <button onclick="changePage('page4')">ย้อนกลับ</button>
+    <button onclick="goToIndex()">หน้าหลัก</button>
+    <button onclick="goToGame()">เล่นเกม</button>
+  </div>
+
+  <script>
+    function changePage(pageId) {
+      document.getElementById(pageId).classList.add("active");
+      var activePages = document.querySelectorAll(".page.active:not(#" + pageId + ")");
+      activePages.forEach(function(page) {
+        page.classList.remove("active");
+      });
+    }
+
+    function goToIndex() {
+      window.location.href = "index.html";
+    }
+
+    function goToGame() {
+      window.location.href = "game.html";
+    }
+  </script>
+</body>
+</html>

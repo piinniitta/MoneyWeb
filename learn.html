@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เนื้อหา</title>
+    <style>
+        .page {
+            display: none;
+        }
+
+        .active {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <button onclick="goToIndex()">หน้าหลัก</button>
+            <button><a onclick="changePage('page1')">การเงิน</a></button>
+            <button><a onclick="changePage('page2')">สกุลเงิน</a></button>
+            <button><a onclick="changePage('page3')">ธนาคาร</a></button>
+            <button><a onclick="changePage('page4')">สหกรณ์</a></button>
+            <button><a onclick="changePage('page5')">สรุป</a></button>
+        </ul>
+    </div>
+
+    <div class="page active" id="page1">
+        <h2>เงินคืออะไร?</h2>
+        <button onclick="showText()">คำตอบ</button>
+        <!-- <p id="hiddenText" style="display: none;"> -->
+        <a href="https://dltv.ac.th/teachplan/episode/61858">
+            คือ สิ่งที่ทุกคนในสังคมยอมรับเป็นสื่อกลางในการแลกเปลี่ยน โดยเป็นสิ่งที่คนในสังคมยอมรับ
+        </a>
+        <!-- </p> -->
+        <!-- script ของเงินคืออะไร? -->
+        <script>
+            function showText() {
+                var hiddenText = document.getElementById("hiddenText");
+                hiddenText.style.display = "block";
+            }
+        </script>
+        <!-- script ของเงินคืออะไร? -->
+
+        <h2>ประโยชน์ของเงิน</h2>
+        <button onclick="showTextProsMoney()">คำตอบ</button>
+        <!-- <p id="ProsMoney" style="display: none;"> -->
+        <a href="####">
+            • เงินคือสิ่งที่คนในสังคมสมมติขึ้น <br>
+            • เป็นที่ยอมรับกันโดยทั่วไปของสังคม <br>
+            • ใช้เป็นสื่อกลางในการแลกเปลี่ยน <br>
+            • ใช้ในการชำระหนี้
+        </a>
+        <!-- </p> -->
+        <!-- script ประโยชน์ของเงิน -->
+        <script>
+            function showTextProsMoney() {
+                var hiddenText = document.getElementById("ProsMoney");
+                hiddenText.style.display = "block";
+            }
+        </script>
+        <!-- script ประโยชน์ของเงิน -->
+
+        <h2>คุณสมบัติของเงิน </h2>
+        <button onclick="showTextPropertyMoney()">คำตอบ</button>
+        <!-- <p id="PropertyMoney" style="display: none;"> -->
+        <a href="####">
+            • เป็นที่ยอมรับของคนในสังคม <br>
+            • มีปริมาณเพียงพอกับความต้องการ <br>
+            • มีความคงทน <br>
+            • มีน้ำหนักเบา
+        </a>
+        <!-- </p> -->
+        <!-- script คุณสมบัติของเงิน  -->
+        <script>
+            function showTextPropertyMoney() {
+                var hiddenText = document.getElementById("PropertyMoney");
+                hiddenText.style.display = "block";
+            }
+        </script>
+        <!-- script คุณสมบัติของเงิน  -->
+
+        <h2>ประเภทของเงิน</h2>
+        <button onclick="showTextTypesoffunds()">คำตอบ</button>
+        <!-- <p id="Typesoffunds" style="display: none;"> -->
+        <!-- <a href="####"> -->
+        <h4>เหรียญกษาปณ์</h4>
+        <a href="https://www.thairath.co.th/money/economics/thailand_econ/1241012">
+            <img src="img/Dtbezn3nNUxytg04OOUtU6zYnEkaT5Zo3bDkSFDOlR7lRG.webp" alt="เหรียญประเทศไทย" width="400"
+                height="400"><br>
+        </a>
+        • เหรียญกษาปณ์(เหรียณ-กะ-สาบ)/ เงินเหรียญ/ coin: เป็นเงินที่ทำด้วยโลหะ มีทั้งหน่วยสตางค์และบาท <br>
+        &nbsp;&nbsp;o ข้อดี <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- มีความทนทาน <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- มีประโยชน์ในด้วยการทอนเงิน <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- เหมาะใช้ซื้อของราคาไม่สูงมาก <br>
+        &nbsp;&nbsp;o ข้อเสีย <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- มีน้ำหนักมาก <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- พกพาไม่สะดวก <br>
+        <h4>ธนบัตร</h4>
+        <a href="https://www.thaiquote.org/content/211802">
+            <img src="img/ธนบัตรไทย.jpg" alt="เหรียญประเทศไทย" width="397" height="266"><br>
+        </a>
+        • ธนบัตร/ เงินกระดาษ: เป็นเงินที่ทำด้วยกระดาษพิเศษ พิมพ์โดยเฉพาะ มีภาพและลวดลาย มีหน่อยเป็นบาท <br>
+        &nbsp;&nbsp;o ข้อดี <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- มีน้ำหนักเบา <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- พกพาสะดวก <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- เหมาะใช้ซื้อของที่มีราคาสูง <br>
+        &nbsp;&nbsp;o ข้อเสีย <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- ขาดชำรุดง่าย <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- มีการปลอมแปลงบ่อย
+        <!-- </a>
+        </p>-->
+        <!-- script ประเภทของเงิน  -->
+        <script>
+            function showTextTypesoffunds() {
+                var hiddenText = document.getElementById("Typesoffunds");
+                hiddenText.style.display = "block";
+            }
+        </script>
+        <!-- script ประเภทของเงิน  -->
+
+        <h2>คุณสมบัติของเงิน</h2>
+        <button onclick="showTextImportanceOfMoney()">คำตอบ</button>
+        <!-- <p id="ImportanceOfMoney" style="display: none;"> 
+        <a href="####">-->
+        • ด้านการผลิต <br>
+        &nbsp;&nbsp;o การใช้เงิน ทำให้การผลิตสินค้าขยายตัวมากกว่าการแลกเปลี่ยนแบบของต่อของ <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- ผลิตสินค้าได้มาก ก็ต้องอาศัยแรงงาน <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- ค่าจ้างกลายเป็นรายได้ของแรงงาน <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- แรงงานใช้เงิน ซื้อสินค้าในเวลาต่อมา <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- ผู้ผลิตสินค้าก็จะมีรายได้ในรูปของกำไร นำกำไรไปขยายกิจการ <br>
+        • ในการแลกเปลี่ยน <br>
+        &nbsp;&nbsp;o หากในระบบเศรษฐกิจไม่มีเงิน การซื้อขายแลกเปลี่ยนจะกระทำก็ต่อเมื่อ ... <br>
+        &nbsp;&nbsp;o รูปอธิบาย<br>
+        &nbsp;&nbsp;o กระทำได้โดยไม่มีขอบเขตจำกัด ส่งผลให้เศรษฐกิจมีการขยายตัว <br>
+        &nbsp;&nbsp;o ระบบการแลกเปลี่ยนแบบของต่อของ Barter system <br>
+        • ในสังคม <br>
+        &nbsp;&nbsp;o ทรัพย์สิน ความมั่นคง ความบันเทิง อำนาจ รวมกัน ก่อให้เกิดการผลิต การค้า ความเป็นอยู่ของสังคมดีขึ้น
+        <br>
+        • ในระบบเศรษฐกิจ <br>
+        &nbsp;&nbsp;o สร้างความเจริญเติบโตกับเศรษฐกิจ <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- มีการผลิตสินค้ามากขึ้น <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- ผู้ผลิตและประชาชนมีเงินมาก <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- เศรษฐกิจมีการเจริญเติบโต <br>
+        </a>
+        <!-- </p> -->
+        <!-- script ความสำคัญของเงิน   -->
+        <script>
+            function showTextImportanceOfMoney() {
+                var hiddenText = document.getElementById("ImportanceOfMoney");
+                hiddenText.style.display = "block";
+            }
+        </script>
+        <!-- script ความสำคัญของเงิน   -->
+
+        <h2>บัตรเครดิต VS บัตรเดบิต</h2>
+        <button onclick="showTextCreditDebit()">คำตอบ</button>
+        <!-- <p id="CreditDebit" style="display: none;"> 
+        <a href="####">-->
+        ?????
+        </a>
+        <!-- </p> -->
+        <!-- script บัตรเครดิต VS บัตรเดบิต  -->
+        <script>
+            function showTextCreditDebit() {
+                var hiddenText = document.getElementById("CreditDebit");
+                hiddenText.style.display = "block";
+            }
+        </script>
+        <!-- script บัตรเครดิต VS บัตรเดบิต  -->
+
+        <h2>หน้าที่ของเงิน</h2>
+        <button onclick="showTextMoneyDuty()">คำตอบ</button>
+        <!-- <p id="MoneyDuty" style="display: none;"> 
+        <a href="####">-->
+        o เป็นสื่อกลางในการแลกเปลี่ยน <br>
+        &nbsp;&nbsp;- ผู้ขายยอมรับให้เงินเป็นสื่อกลางในการแลกเปลี่ยน <br>
+        &nbsp;&nbsp;- ผู้ซื้อยินดีชำระเงินให้เป็นการแลกเปลี่ยน <br>
+        &nbsp;&nbsp;- เศรษฐกิจเจริญก้าวหน้า <br>
+        &nbsp;&nbsp;- ภาพประกอบ <br>
+        o เป็นเครื่องรักษามูลค่าของสินค้า <br>
+        &nbsp;&nbsp;- สินค้าอาจเสื่อมสภาพได้ทำให้มูลค่าลดลง <br>
+        &nbsp;&nbsp;- เงิน เป็นทรัพย์ที่มีสภาพคล่อง <br>
+        &nbsp;&nbsp;- สามารถใช้จ่ายได้ทันที <br>
+        &nbsp;&nbsp;- สะดวกในการลงทุน ขยายกิจการ <br>
+        o เป็นมาตรฐานวัดค่า เปรียบเทียบค่า <br>
+        &nbsp;&nbsp;- การแสดงราคาเป็นหน่วยมาตรฐานของเงิน <br>
+        &nbsp;&nbsp;- ช่วยในการเปรียบเทียบมูลค่าของสินค้าและบริการ <br>
+        &nbsp;&nbsp;- ส่งผลให้ซื้อขายกันได้สะดวก <br>
+        o เป็นมาตรฐานในการชำระหนี้ภายหน้า <br>
+        &nbsp;&nbsp;- ในกรณีที่มีการกู้ยืมเงิน <br>
+        &nbsp;&nbsp;- โดยผู้ขายยินดีให้ผู้ซื้อชำระเงินในภายหลัง <br>
+        &nbsp;&nbsp;- เมื่อครบกำหนดชำระหนี้ <br>
+        &nbsp;&nbsp;- ผู้กู้ต้องนำเงินมาชำระให้แก่ผู้ขาย พร้อมดอกเบี้ยเงินกู้ <br>
+        </a>
+        <!-- </p> -->
+        <!-- script หน้าที่ของเงิน  -->
+        <script>
+            function showTextMoneyDuty() {
+                var hiddenText = document.getElementById("MoneyDuty");
+                hiddenText.style.display = "block";
+            }
+        </script>
+        <!-- script หน้าที่ของเงิน  -->
+
+        <br>
+        <button onclick="goToIndex()">หน้าหลัก</button>
+        <button onclick="changePage('page2')">ต่อไป</button>
+    </div>
+
+    <div class="page" id="page2">
+        <h2>สกุลเงิน</h2>
+        <button onclick="showTextCurrency()">คำตอบ</button>
+        <!-- <p id="Currency" style="display: none;"> -->
+        <a href="###">
+            คือ หน่วยที่ใช้แลกเปลี่ยนเงินตราของประเทศหรือ กลุ่มประเทศต่าง ๆ ซึ่งมีความแตกต่างกันไป <br>
+            เช่น บาท ดอลลาร์ เยน ยูโร หยวน รูปี ฯลฯ โดยการแลกเปลี่ยนหรือการซื้อขายสินค้า <br>
+            และบริการระหว่างประเทศที่ใช้สกุลเงินต่างกันจะใช้ อัตราแลกเปลี่ยนเงินเป็นเกณฑ์ในการอ้างอิง
+        </a>
+        <!-- </p> -->
+        <!-- script สกุลเงิน -->
+        <script>
+            function showTextCurrency() {
+                var hiddenText = document.getElementById("Currency");
+                hiddenText.style.display = "block";
+            }
+        </script>
+        <!-- script สกุลเงิน -->
+        <br>
+
+        <h2>สกุลเงินไทย</h2>
+        <button onclick="showTextThaiCurrency()">คำตอบ</button>
+        <!-- <p id="ThaiCurrency" style="display: none;"> -->
+        <a href="###">
+            ภาพสกลุเงิน
+            ธงประเทศ
+            ชื่อสกุลเงิน
+        </a>
+        <!-- </p> -->
+        <!-- script สกุลเงิน -->
+        <script>
+            function showTextThaiCurrency() {
+                var hiddenText = document.getElementById("ThaiCurrency");
+                hiddenText.style.display = "block";
+            }
+        </script>
+        <!-- script สกุลเงิน -->
+        <br>
+
+        <h2>สกุลเงินประเทศเพื่อนบ้าน</h2>
+        <button onclick="showTextNeighboringCountriesCurrency()">คำตอบ</button>
+        <!-- <p id="NeighboringCountriesCurrency" style="display: none;"> -->
+        <a href="###">
+            ภาพสกลุเงิน
+            ธงประเทศ
+            ชื่อสกุลเงิน
+        </a>
+        <!-- </p> -->
+        <!-- script สกุลเงินประเทศเพื่อนบ้าน -->
+        <script>
+            function showTextNeighboringCountriesCurrency() {
+                var hiddenText = document.getElementById("NeighboringCountriesCurrency");
+                hiddenText.style.display = "block";
+            }
+        </script>
+        <!-- script สกุลเงินประเทศเพื่อนบ้าน -->
+        <br>
+
+        <h2>สกุลเงินประเทศอื่นๆ</h2>
+        <button onclick="showTextOtherCountries()">คำตอบ</button>
+        <!-- <p id="OtherCountries" style="display: none;"> -->
+        <a href="###">
+            ภาพสกลุเงิน
+            ธงประเทศ
+            ชื่อสกุลเงิน
+        </a>
+        <!-- </p> -->
+        <!-- script สกุลเงินประเทศอื่นๆ -->
+        <script>
+            function showTextOtherCountries() {
+                var hiddenText = document.getElementById("OtherCountries");
+                hiddenText.style.display = "block";
+            }
+        </script>
+        <!-- script สกุลเงินประเทศอื่นๆ -->
+        <br>
+
+        <button onclick="changePage('page1')">ย้อนกลับ</button>
+        <button onclick="changePage('page3')">ต่อไป</button>
+    </div>
+
+    <div class="page" id="page3">
+        <h2>ธนาคาร</h2>
+        <button onclick="showTextBank()">คำตอบ</button>
+        <!-- <p id="Bank" style="display: none;"> -->
+        <a href="###">
+            คือ กิจการที่รับฝากเงินเป็น การทั่วไปและประกอบธุรกิจเกี่ยวกับ ทางด้านการเงิน <br>
+            นอกจากนี้ ธนาคารยังมีเครือข่ายครอบคลุมอยู่ในทุก อำเภอ ทุกจังหวัด ในประเทศไทย <br>
+            จึงช่วยให้การซื้อขาย แลกเปลี่ยนสินค้าและบริการ การทำธุรกิจ <br>
+            ธนาคารจึงเป็น แหล่งที่ประชาชนส่วนใหญ่นำเงินมาฝาก รวมทั้งเป็นแหล่ง กู้ยืมเงิน <br>
+        </a>
+        <!-- </p> -->
+        <!-- script ธนาคาร -->
+        <script>
+            function showTextBank() {
+                var hiddenText = document.getElementById("Bank");
+                hiddenText.style.display = "block";
+            }
+        </script>
+        <!-- script ธนาคาร -->
+        <br>
+
+        <h2>ความสำคัญของธนาคาร</h2>
+        <button onclick="showTextImportanceBank()">คำตอบ</button>
+        <!-- <p id="ImportanceBank" style="display: none;"> -->
+        <a href="###">
+            เป็นองค์กรที่มีบทบาท หน้าที่อำนวย ความสะดวกในการเคลื่อนย้ายเงิน เป็นตัวกลาง
+            ระดมเงินจากผู้ออมเงินไปยังผู้ลงทุน ในธุรกิจต่างๆ
+            1. เป็นสื่อกลางในการติดต่อทางการเงิน
+            a. ระหว่างผู้ออมและผู้ต้องการเงินลงทุน
+            2. เป็นแหล่งเงินทุนสำหรับผู้ประกอบการ
+            a. เพื่อให้ผู้ประกอบการต่าง ๆ ได้ใช้ธนาคารเป็น แหล่งแสวงหาเงินลงทุนทางเศรษฐกิจเพิ่มเต็มผ่านการกู้ยืม
+            3. เป็นแหล่งออมเงินของหน่วยงานเศรษฐกิจ
+            a. ได้มีตัวเลือกในการออมเงิน โดยพิจารณาจากประโยชน์ที่ จะได้รับจากการออมเงิน เช่น ธนาคารไทยพาณิชย์
+            ธนาคารกรุงเทพ ธนาคารกสิกรไทย
+            4. เพื่อช่วยกระจายความเจริญให้ทั่วถึง
+            a. เป็นแหล่งระดมทุนของบุคคลที่อยู่ในท้องถิ่นต่าง ๆ เพื่อสร้างงานและลงทุนให้แก่ภาคเศรษฐกิจ
+            5. พัฒนาเศรษฐกิจของประเทศ
+            a. ธนาคารเป็นแหล่งให้กู้ยืมเงินแก่กิจการที่เป็น ประโยชน์เพื่อช่วยให้มีการผลิต และมีการขายสินค้ามากขึ้น
+            ทำให้ประชาชนมีงานทำเพิ่มขึ้น และมีความเป็นอยู่ดีขึ้น เศรษฐกิจของประเทศพัฒนาอย่างมั่นคง
+        </a>
+        <!-- </p> -->
+        <!-- script ความสำคัญของธนาคาร  -->
+        <script>
+            function showTextImportanceBank() {
+                var hiddenText = document.getElementById("ImportanceBank");
+                hiddenText.style.display = "block";
+            }
+        </script>
+        <!-- script ความสำคัญของธนาคาร -->
+        <br>
+
+        <h2>ประเภทของธนาคาร </h2>
+        <button onclick="showTextTypeOfBank()">คำตอบ</button>
+        <!-- <p id="Bank" style="display: none;"> -->
+        <a href="###">
+            มี 3 ประเภท
+            1. ธนาคารแห่งประเภทไทย
+            1. ตั้งอยู่ที่ เขตพระนคร กรุงเทพมหานคร
+            2. ธนาคารกลาง ในการควบคุม ปริมาณเงิน ดูแลทุนสำรอง ระหว่างประเทศและจัดพิมพ์ ธนบัตร
+            a. ควบคุมปริมาณเงินและสินเชื่อของประเทศ
+            b. ดูแลทุนสำรองระหว่างประเทศ
+            c. ควบคุมธนาคารพาณิชย์และสถาบันการเงินอื่น
+            d. จัดพิมพ์ธนบัตรขึ้นใช้ภายในประเทศ
+
+            2. ธนาคารพาณิชย์
+            1. เป็นธนาคารที่ได้รับอนุญาตให้ ประกอบธุรกิจเกี่ยวกับ การฝากเงิน-ถอนเงินและ ให้กู้ยืมเงิน
+            2. เป็นธนาคารที่ได้รับอนุญาตให้ประกอบธุรกิจเกี่ยวกับ การฝากเงิน-ถอนเงินและให้กู้ยืมเงินหรือบริการโอนเงิน
+            ภายในประเทศและระหว่างประเทศและบริการรับชำระ ค่าสาธารณูปโภคต่างๆ เช่น 
+            3. มีธนาคาร ไทยพาณิชย์ กรุงเทพ กรุงศรี กรุงไทย กสิกร tmb เกียรตินาคิน ซีไอเอ็มบีไทย ยูโอบี +
+            รูป+อ้างอิง+ชื่อ
+
+            3. ธนาคารที่มีวัตถุประสงค์
+            1. สถาบันการเงินที่ตั้งขึ้นมาเพื่อดำเนินงานตามนโยบาย รัฐเพื่อการพัฒนา และส่งเสริมธุรกิจ โดยอยู่ภายใต้
+            การกำกับดูแลของกระทรวงการคลัง ซึ่งมีอำนาจ มอบหมายให้กับ ธนาคารแห่งประเทศไทย เข้ามาดำเนินการจัดการ
+            2. มีธนาคาร ออมสิน ธกส. ธอส. อิสลามพัฒนาวิสาหกิจ ธนาคารเพื่อการส่งออกและนำเข้าแห่งประเทศไทย +
+            รูป+อ้างอิง+ชื่อ
+            
+            a. ธนาคารออมสิน จัดตั้งขึ้น เพื่อส่งเสริมการออมของประชาชน รับฝากเงินจากประชาชนทั่วไป ให้ประชาชนทั่วไป
+            กู้ยืมเงินและให้รัฐบาลกู้ยืมเงินไปใช้ในการพัฒนาประเทศ
+            b. ธนาคารเพื่อการเกษตรและสหกรณ์การเกษตร มุ่งให้ความช่วยเหลือทางการเงิน เพื อส่งเสริมอาชีพ การเกษตรหรือการด
+            าเนินงานของเกษตรกร กลุ่มเกษตรกร หรือ สหกรณ์การเกษตร ตลอดจนส่งเสริมให้ เกษตรกร กลุ่มเกษตรกร หรือ
+            สหกรณ์การเกษตร ให้สามารถประกอบอาชีพอย่างอื่นที่เกี่ยวเนื่องในการเกษตร เพื่อเพิ่มรายได้ให้แก่ครอบครัวเกษตรกร
+            รวมทั้งให้บริการ รับฝากเงิน
+            c. ธนาคารอาคารสงเคราะห์
+            i. ทำหน้าที่ช่วยเหลือทางการเงินให้กับประชาชนได้มี ที่อยู่อาศัยตามสมควรแกอัตภาพ
+            ii. โดยการให้กู้ยืมเงิน และจัดสรรที่ดินเพื่อก่อสร้าง ที่เป็นหน่วยงานของรัฐบาลที่ประกอบธุรกิจ
+            ในการส่งเสริมและช่วยเหลือประชาชนนำเงินไป ลงทุนเกี่ยวกับการสร้างอาคารและที่ดินโดยตรง
+            d. ธนาคารอิสลามแห่งประเทศไทย เป็นธนาคารที่ดำเนินธุรกรรมโดยปราศจากดอกเบี้ย แต่อยู่บน หลักการ ก
+            าไร-ขาดทุนร่วมกัน และด าเนินธุรกิจตาม พ.ร.บ. ธนาคารอิสลามแห่งประเทศไทย พ.ศ. ๒๕๔๕ โดยมีคณะ
+            ที่ปรึกษาด้านศาสนาให้คำแนะนำตรวจสอบ เพื่อให้ธนาคาร ด าเนินงานถูกต้องตามหลักศาสนาอิสลาม
+            e. ธนาคารเพื่อการส่งออกและนำเข้าแห่งประเทศไทย มีหน้าที่ส่งเสริมการสร้างและสนับสนุนผู้ส่งออกและผู้ลงทุนที่ท า
+            รายได้เป็นเงินตราต่างประเทศเข้าประเทศโดยทำธุรกิจ หรือกิจกรรม
+            เพื่อช่วยเหลือนักธุรกิจไทยให้สามารถแข่งขันกับประเทศอื่น และให้บริการทางการเงิน ในส่วนทีระบบธนาคารพาณิชย์ไม่
+            สามารถตอบสนองได้ รวมทั้งสนับสนุนนโยบายของรัฐบาลใน การ ให้ความช่วยเหลือแก่ต่างประเทศเพื่อเอื้อประโยชน์ต่อ
+            การส่งออก การลงทุน และการพัฒนาเศรษฐกิจของไทย
+            f. ธนาคารพัฒนาวิสาหกิจ ขนาดกลางและ ขนาดย่อยแห่งประเทศไทย ให้บริการทางการเงินกับผู้ประกอบการไทยรายเล็ก ในด้าน
+            สินเชื่อหรือการร่วมลงทุน เพื่อเพิ่มโอกาสการเข้าถึงแหล่งเงินทุน แก่ผู้ประกอบการขนาดเล็ก
+            ที่ไม่ได้รับบริการจากระบบสถาบัน การเงินเชิงพาณิชย์
+
+        </a>
+        <!-- </p> -->
+        <!-- script ประเภทของธนาคาร  -->
+        <script>
+            function showTextTypeOfBank() {
+                var hiddenText = document.getElementById("TypeOfBank");
+                hiddenText.style.display = "block";
+            }
+        </script>
+        <!-- script ประเภทของธนาคาร  -->
+        <br>
+
+        <h2>การฝากเงิน</h2>
+        <button onclick="showTextDeposit()">คำตอบ</button>
+        <!-- <p id="Deposit" style="display: none;"> -->
+        <a href="###">
+            คือ การนำเงินไปฝากไว้กับธนาคาร ทำให้เงิน ไม่สูญหายและได้รับดอกเบี้ยเงินฝากเป็นผลตอบแทน
+        </a>
+        <!-- </p> -->
+        <!-- script การฝากเงิน  -->
+        <script>
+            function showTextDeposit() {
+                var hiddenText = document.getElementById("Deposit");
+                hiddenText.style.display = "block";
+            }
+        </script>
+        <!-- script การฝากเงิน -->
+        <br>
+
+        <h2>ประเภทการฝากเงิน</h2>
+        <button onclick="showTextDepositType()">คำตอบ</button>
+        <!-- <p id="DepositType" style="display: none;"> -->
+        <a href="###">
+            มี 3 ประเภท
+            1. เงินฝากออมทรัพย์หรือเงินฝากเผื่อเรียก
+            a. เป็นการฝากเงินที่ไม่มีระยะเวลากำหนด และจำนวนครั้งในการฝากเงิน - ถอนเงิน
+            ผู้ฝากสามารถฝากเงินได้ทุกวันตามที่ต้องการ
+            2. เงินฝากประจำ
+            a. เป็นการนำเงินไปฝากธนาคารตามระยะเวลา ที่ธนาคารกำหนด การฝากประเภทนี้ จะไม่สามารถ
+            ถอนเงินได้จนกว่าจะครบระยะเวลาตามกำหนด เช่น 12 เดือน หรือ 24 เดือน การฝาก ประเภทนี้จะมีข้อดีคือ
+            ถ้าฝากเงินตามที่ ระยะเวลากำหนดจะได้รับผลตอบแทนสูงกว่า การฝากเงินแบบประเภทออมทรัพย์
+            3. เงินฝากกระแสรายวัน
+            a. เป็นเงินฝากที่ผู้ฝากสามารถใช้เช็คในการเบิก จ่ายเงินได้ โดยธนาคารจะทำการโอนเงินตาม
+            จำนวนที่ระบุในเช็คกับผู้ที่นำเช็คมาขึ้นเงิน
+
+        </a>
+        <!-- </p> -->
+        <!-- script ประเภทการฝากเงิน -->
+        <script>
+            function showTextDepositType() {
+                var hiddenText = document.getElementById("DepositType");
+                hiddenText.style.display = "block";
+            }
+        </script>
+        <!-- script ประเภทการฝากเงิน -->
+        <br>
+
+        <h2>เช็ค</h2>
+        <button onclick="showTextCheque()">คำตอบ</button>
+        <!-- <p id="Cheque" style="display: none;"> -->
+        <a href="###">
+            คือ ตราสาร ซึ่งบุคคลหนึ่ง เรียกว่า ผู้สั่งจ่าย สั่งให้ธนาคารใช้เงินจำนวนหนึ่ง <br>
+            เมื่อทวงถามให้แก่บุคคล หนึ่ง เรียกว่า ผู้รับเงิน
+        </a>
+        <!-- </p> -->
+        <!-- script เช็ค  -->
+        <script>
+            function showTextCheque() {
+                var hiddenText = document.getElementById("Cheque");
+                hiddenText.style.display = "block";
+            }
+        </script>
+        <!-- script เช็ค -->
+        <br>
+
+        <h2>การถอนเงิน</h2>
+        <button onclick="showTextWithdrawal()">คำตอบ</button>
+        <!-- <p id="Withdrawal" style="display: none;"> -->
+        <a href="###">
+            คือ การเบิกเงินที่ฝากไว้กับธนาคารออกมาเพื่อใช้จ่าย การถอนเงินมี 5 ขั้นตอน ดังนี้
+            1. เตรียมสมุดบัญชีและบัตรประชาชน
+            2. เดินทางไปยังธนาคารที่เราฝากสาขาดก้ได้
+            3. กรอกรายละเอียดลงในใบถอนเงิน + ตัวอย่างใบถอนเงิน
+            4. ยื่นใบถอนเงิน สมุดเงินฝาก และบัตรประชาชน
+            5. ตรวจสอบจำนวนเงินและตรวจสอบยอดเงินในสมุดเงินฝาก
+        </a>
+        <!-- </p> -->
+        <!-- script การถอนเงิน  -->
+        <script>
+            function showTextWithdrawal() {
+                var hiddenText = document.getElementById("Withdrawal");
+                hiddenText.style.display = "block";
+            }
+        </script>
+        <!-- script การถอนเงิน -->
+        <br>
+
+        <h2>ดอกเบี้ยเงินฝาก</h2>
+        <button onclick="showTextDepositInterest()">คำตอบ</button>
+        <!-- <p id="DepositInterest" style="display: none;"> -->
+        <a href="###">
+            ดอกเบี้ยเงินฝาก เป็นค่าตอบแทนที่ธนาคารจะต้อง จ่ายแก่ผู้ฝาก เมื่อเรานำเงินไปฝากกับธนาคาร
+            จะคิดดอกเบี้ยของเงินฝากให้กับเรา
+        </a>
+        <!-- </p> -->
+        <!-- script ดอกเบี้ยเงินฝาก -->
+        <script>
+            function showTextDepositInterest() {
+                var hiddenText = document.getElementById("DepositInterest");
+                hiddenText.style.display = "block";
+            }
+        </script>
+        <!-- script ดอกเบี้ยเงินฝาก -->
+        <br>
+        <h2>ดอกเบี้ยกู้ยืม</h2>
+        <button onclick="showTextLoanInterest()">คำตอบ</button>
+        <!-- <p id="LoanInterest" style="display: none;"> -->
+        <a href="###">
+            ดอกเบี้ยกู้ยืม เกิดขึ้นจากธนาคารนำเงินที่รับ ฝากไปให้บุคคลหรือหน่วยงานต่างๆกู้ยืม โดยผู้
+            กู้ยืมจะต้องจ่ายดอกเบี้ยกู้ยืมให้แก่ธนาคาร
+        </a>
+        <!-- </p> -->
+        <!-- script ดอกเบี้ยกู้ยืม  -->
+        <script>
+            function showTextLoanInterest() {
+                var hiddenText = document.getElementById("LoanInterest");
+                hiddenText.style.display = "block";
+            }
+        </script>
+        <!-- script ดอกเบี้ยกู้ยืม -->
+        <br>
+
+        <button onclick="changePage('page2')">ย้อนกลับ</button>
+        <button onclick="changePage('page4')">ต่อไป</button>
+    </div>
+
+    <div class="page" id="page4">
+
+        <h2>สหกรณ์</h2>
+        <button onclick="showTextCooperative()">คำตอบ</button>
+        <p id="Cooperative" style="display: none;">
+            <a href="###">
+                คือ องค์กรทางเศรษฐกิจและสังคมที่สมาชิกร่วมกันจัดตั้งขึ้นด้วยการลงหุ้นร่วมกัน จัดการร่วมกันในการผลิต
+                การจำหน่ายสินค้า หรือบริการตามความต้องการหรือผลประโยชน์อย่างเดียวกันของบรรดาสมาชิก
+                สมาชิกแต่ละคนมีสิทธิ์ออกเสียงได้หนึ่งเสียงในการบริหารสหกรณ์ โดยไม่ขึ้นกับจำนวนหุ้นที่ถืออยู่
+            </a>
+        </p>
+        <!-- script สหกรณ์  -->
+        <script>
+            function showTextCooperative() {
+                var hiddenText = document.getElementById("Cooperative");
+                hiddenText.style.display = "block";
+            }
+        </script>
+        <!-- script สหกรณ์ -->
+        <br>
+
+        <h2>ความเป็นมาของสหกรณ์</h2>
+        <button onclick="showTextCooperativeBackground()">คำตอบ</button>
+        <p id="CooperativeBackground" style="display: none;">
+            <a href="###">
+
+            </a>
+        </p>
+        <!-- script ความเป็นมาของสหกรณ์  -->
+        <script>
+            function showTextCooperativeBackground() {
+                var hiddenText = document.getElementById("CooperativeBackground");
+                hiddenText.style.display = "block";
+            }
+        </script>
+        <!-- script ความเป็นมาของสหกรณ์ -->
+        <br>
+
+        <h2>ผู้ก่อตั้งสหกรณ์</h2>
+        <button onclick="showTextCooperativeFounder()">คำตอบ</button>
+        <p id="CooperativeFounder" style="display: none;">
+            <a href="###">
+                ผู้จัดตั้งในไทย คือ พระราชวงศ์เธอ กรมหมื่นพิทยาลงกรณ์ + รูป
+            </a>
+        </p>
+        <!-- script สหกรณ์  -->
+        <script>
+            function showTextCooperativeFounder() {
+                var hiddenText = document.getElementById("CooperativeFounder");
+                hiddenText.style.display = "block";
+            }
+        </script>
+        <!-- script สหกรณ์ -->
+        <br>
+
+        <h2>หลักการของสหกรณ์</h2>
+        <button onclick="showTextCooperativePrinciples()">คำตอบ</button>
+        <p id="CooperativePrinciples" style="display: none;">
+            <a href="###">
+                หลักการที่ ๑ การเป็น สมาชิกโดยสมัครใจ และเปิดกว้าง
+                หลักการที่ ๒ การควบคุมโดยสมาชิก ตามหลักประชาธิปไตย
+                หลักการที่ ๓ การมีส่วนร่วมทาง เศรษฐกิจของสมาชิก
+                หลักการที่ ๔ การปกครองตนเองและ ความเป็นอิสระ
+                หลักการที่ ๕ การศึกษา ฝึกอบรม และสารสนเทศ
+                หลักการที่ ๖ การร่วมมือระหว่าง สหกรณ์
+                หลักการที่ ๗ การเอื้ออาทรต่อชุมชน
+
+            </a>
+        </p>
+        <!-- script หลักการของสหกรณ์ -->
+        <script>
+            function showTextCooperativePrinciples() {
+                var hiddenText = document.getElementById("CooperativePrinciples");
+                hiddenText.style.display = "block";
+            }
+        </script>
+        <!-- script หลักการของสหกรณ์ -->
+        <br>
+
+        <h2>ประโยชน์ของสหกรณ์</h2>
+        <button onclick="showTextProsOfCooperative()">คำตอบ</button>
+        <p id="ProsOfCooperative" style="display: none;">
+            <a href="###">
+                1. การรวมกันเป็นสหกรณ์ ทำให้มีอำนาจในการต่อรอง ทั้งในด้านการซื้อ และการขาย สินค้า
+                หรือผลิตผลที่สมาชิกผลิตได้
+                2. ทำให้ชุมชนมีความสามัคคี ปรองดอง อันจะนำความเจริญมาสู่ ประเทศชาติได้ สหกรณ์ส่งเสริมให้
+                สมาชิกรู้จักการอยู่ร่วมกันอย่างมีสันติสุข ทำให้มีฐานะความเป็นอยู่ที่ดีขึ้น
+                3. สหกรณ์เป็นแหล่งจัดหา เงินให้สมาชิกกู้ยืมไปลงทุน ประกอบอาชีพหลัก สามารถลด ต้นทุนการผลิตได้เป็นอย่างดี
+            </a>
+        </p>
+        <!-- script ประโยชน์ของสหกรณ์  -->
+        <script>
+            function showTextProsOfCooperative() {
+                var hiddenText = document.getElementById("ProsOfCooperative");
+                hiddenText.style.display = "block";
+            }
+        </script>
+        <!-- script ประโยชน์ของสหกรณ์ -->
+        <br>
+
+        <h2>สหกรณ์แห่งแรกในประเทศไทย</h2>
+        <button onclick="showTextFirstCooperative()">คำตอบ</button>
+        <p id="FirstCooperative" style="display: none;">
+            <a href="###">
+                คือ สหกรณ์วัดจันทร์ไม่จำกัดสินใช้ + รูปสหกรณ์วัดจันทร์
+            </a>
+        </p>
+        <!-- script สหกรณ์แห่งแรกในประเทศไทย -->
+        <script>
+            function showTextFirstCooperative() {
+                var hiddenText = document.getElementById("FirstCooperative");
+                hiddenText.style.display = "block";
+            }
+        </script>
+        <!-- script สหกรณ์แห่งแรกในประเทศไทย -->
+        <br>
+
+        <h2>ประเภทของสหกรณ์</h2>
+        <button onclick="showTextTypeOfCooperative()">คำตอบ</button>
+        <p id="TypeOfCooperative" style="display: none;">
+            <a href="###">
+                มี 7 ประเภท
+                1. สหกรณ์เกษตร
+                a. สหกรณ์ที่จัดตั้งขึ้นในหมู่ ผู้มีอาชีพ ทางการเกษตร รวมกันจัดตั้งขึ้น โดยมี
+                จุดมุ่งหมายเพื่อให้สมาชิกช่วยเหลือซึ่งกัน และกัน เพื่อแก้ไขความเดือดร้อนในการ ประกอบอาชีพของสมาชิก
+                b. ตัวอย่าง รูปภาพ + ชื่อ +อ้างอิง
+                2. สหกรณ์ประมง
+                a. สหกรณ์ที่จัดตั้งขึ้นในหมู่ ชาวประมง เพื่อแก้ไขปัญหาและ อุปสรรคในการประกอบอาชีพ บุคคล
+                เหล่านี้จึงรวมกันโดยยึดหลักการช่วย ตนเองและช่วยเหลือซึ่งกันและกัน
+                b. ตัวอย่าง รูปภาพ + ชื่อ +อ้างอิง
+                3. สหกรณ์นิคม
+                a. สหกรณ์ที่มีการดำเนินการ จัดสรรที่ดินทำกินให้ราษฎร และสิ่งอำนวยความสะดวกให้ผู้ที่อยู่อาศัย ควบคู
+                ่ไปกับการดำเนินการจัดหา สินเชื่อ การแปรรูปการเกษตร การ ส่งเสริมอาชีพ
+                b. ตัวอย่าง รูปภาพ + ชื่อ +อ้างอิง
+                4. สหกรณ์ร้านค้า
+                a. ส่วนให้มักเรียกชื่อว่า ร้านสหกรณ์ จัดตั้งขึ้นโดยกลุ่มผู้บริโภครวมกัน เพื่อ
+                จัดหาสินค้าเครื่องอุปโภคบริโภค และ รวบรวมผลิตภัณฑ์ มาจำหน่ายแก่สมาชิก และบุคคลทั่วไป
+                ซึ่งสมาชิกผู้ถือหุ้นทุกคน เป็นเจ้าของ และลงทุนร่วมกัน
+                b. ตัวอย่าง รูปภาพ + ชื่อ +อ้างอิง
+                5. สหกรณ์ออมทรัพย์
+                a. สถาบันการเงินแบบหนึ่งที่มีสมาชิก เป็นบุคคลซึ่งมีอาชีพอย่างเดียวกัน หรือ อาศัยอยู่ในชุมชนเดียวกัน
+                มีวัตถุประสงค์ เพื่อส่งเสริมให้สมาชิกรู้จักการออมทรัพย์ และให้กู้ยืมเมื่อเกิดความจำเป็น
+                b. ตัวอย่าง รูปภาพ + ชื่อ +อ้างอิง
+                6. สหกรณ์บริการ
+                a. สหกรณ์ที่จัดตั้งโดยมีประชาชนไม่ น้อยกว่า ๑๐ คน ที่มีอาชีพอย่างเดียวกัน ได้รับ
+                ความเดือดร้อนในเรื่องเดียวกัน รวมตัวกันโดย ช่วยเหลือซึ่งกันและกัน เพื่อแก้ ปัญหาต่าง ๆ
+                รวมทั้งการส่งเสริม ให้เกิดความมั่นคงในอาชีพต่อไป
+                b. ตัวอย่าง รูปภาพ + ชื่อ +อ้างอิง
+                7. สหกรณ์เครดิตยูเนียน
+                a. สหกรณ์อเนกประสงค์ ตั้งขึ้นโดย ความสมัครใจของสมาชิกที่อยู่ในวง สัมพันธ์เดียวกัน เช่น อาศัยในชุมชน
+                เดียวกัน ประกอบอาชีพเดียวกัน เพื่อการ รู้จักช่วยเหลือตนเองอย่างต่อเนื่อง โดย
+                มุ่งเน้นให้สมาชิกประหยัดและออม
+                b. ตัวอย่าง รูปภาพ + ชื่อ +อ้างอิง
+            </a>
+        </p>
+        <!-- script ประเภทของสหกรณ์ -->
+        <script>
+            function showTextTypeOfCooperative() {
+                var hiddenText = document.getElementById("TypeOfCooperative");
+                hiddenText.style.display = "block";
+            }
+        </script>
+        <!-- script ประเภทของสหกรณ์ -->
+        <br>
+
+        <button onclick="changePage('page3')">ย้อนกลับ</button>
+        <button onclick="changePage('page5')">ต่อไป</button>
+    </div>
+
+    <div class="page" id="page5">
+        สรุป
+        <br>
+        <button onclick="changePage('page4')">ย้อนกลับ</button>
+        <button onclick="goToIndex()">หน้าหลัก</button>
+        <button onclick="goToGame()">เล่นเกม</button>
+    </div>
+
+    <script>
+        function changePage(pageId) {
+            document.getElementById(pageId).classList.add("active");
+            var activePages = document.querySelectorAll(".page.active:not(#" + pageId + ")");
+            activePages.forEach(function (page) {
+                page.classList.remove("active");
+            });
+        }
+        function goToIndex() {
+            window.location.href = "index.html";
+        }
+        function goToGame() {
+            window.location.href = "game.html";
+        }
+    </script>
+</body>
+
+</html>
