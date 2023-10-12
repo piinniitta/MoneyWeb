@@ -2,20 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game</title>
+    <link rel="stylesheet" href="game.css">
 </head>
 <body>
-    <a href="Memory game.unity3d">เล่นเกม</a>
-    <button onclick="goToIndex()">หน้าหลัก</button>
-    <button onclick="goToLearn()">บทเรียน</button>
+    <a href="index.html" class="back-button">❮</a> 
+    <div class="container">
+        <div class="game">
+            <a href="https://piinniitta.github.io/MoneyMemory/">คลิกที่นี่เพื่อเล่นเกม</a><br>
+            <button class="play" onclick="goToGame()">Click</button>     
+        </div>
+        
+        <div class="home">
+            <button onclick="goToIndex()">หน้าหลัก</button>
+        </div>
+        
+        <div class="learn">
+            <button onclick="goToLearn()">บทเรียน</button> 
+        </div>
+    </div>
+    
     <script>
         function goToIndex() {
             window.location.href = "index.html";
         }
         function goToLearn() {
             window.location.href = "learn-select.html";
+        }
+        function goToGame() {
+            window.location.href = "https://piinniitta.github.io/MoneyMemory/";
         }
     </script>
 </body>

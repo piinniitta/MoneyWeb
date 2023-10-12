@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Popings', Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgba(65, 181, 216, 0.432);
+    font-size: 24px; /* กำหนดขนาดตัวอักษรหลักให้ใหญ่ขึ้น */
+    line-height: 1.5; /* กำหนดระยะระหว่างบรรทัด */
+}
+
+.back-button {
+    font-size: 50px;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.3s, background-color 0.3s;
+    z-index: 1;
+}
+
+.back-button:hover {
+    color: white;
+    /* เปลี่ยนสีตัวอักษรเมื่อ hover */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 100px); /* ลบความสูงของปุ่มย้อนกลับออกจากความสูงทั้งหน้าจอ */
+    text-align: center; /* จัดข้อความตามกึ่งกลาง */
+}
+
+/* เพิ่มสไตล์เพิ่มเติมให้กับแต่ละปุ่มแยกต่างหาก */
+.game {
+    margin-top: 10px;
+    font-size: 40px;
+
+}
+
+.play {
+    margin-top: 10px;
+    font-size: 2rem;
+}
+
+.home {
+    margin-top: 10px;
+}
+
+.learn {
+    margin-top: 10px;
+}
+
+/* สร้างลูกเล่นเมื่อเม้าส์ไฮไลต์บนลิงก์ข้อความ */
+.game a {
+    text-decoration: none;
+    position: relative;
+    color: black;
+}
+
+.game a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px; /* ความยาวของลูกเล่น */
+    background-color: #333; /* สีของลูกเล่น */
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0); /* ให้เริ่มต้นที่ความยาว 0 */
+    transform-origin: bottom right;
+    transition: transform 0.3s;
+}
+
+.game a:hover::after {
+    transform: scaleX(1); /* เมื่อ hover ให้ขยายเติมตรงที่เล็กเล่น */
+}
+
+.play button {
+    width: 200px; /* กำหนดความกว้างของลิงก์ภายในปุ่มเป็น 300px */
+    height: 300px;
+    font-size: 24px; /* กำหนดขนาดตัวอักษร */
+    padding: 10px 20px; /* กำหนดระยะขอบของลิงก์ภายในปุ่ม */
+    border-radius: 20px; /* กำหนดระยะขอบโค้ง */
+}
+
+
+.home button,
+.learn button {
+    width: 250px; /* กำหนดความกว้างเป็น 300px */
+    font-size: 30px; /* กำหนดขนาดตัวอักษร */
+    padding: 10px 20px; /* กำหนดระยะขอบของปุ่ม */
+    border-radius: 20px;
+}
+/* สร้างเว้นระหว่างข้อความในแต่ละองค์ปุ่ม */
+.game a, .home button, .learn button {
+    margin: 10px 0;
+}
